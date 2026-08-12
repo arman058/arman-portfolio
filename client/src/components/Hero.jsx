@@ -1,5 +1,11 @@
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Instagram, Download, ArrowRight } from 'lucide-react';
+import { motion } from "framer-motion";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Download,
+  ArrowRight,
+} from "lucide-react";
 
 /**
  * Hero Section Component
@@ -23,14 +29,22 @@ export default function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/arman058', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/arman-shaikh-4a9582218/', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://instagram.com/codingwith_arman', label: 'Instagram' },
+    { icon: Github, href: "https://github.com/arman058", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/arman-shaikh-4a9582218/",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://instagram.com/codingwith_arman",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -42,9 +56,9 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0 opacity-40"
         style={{
-          backgroundImage: 'url(/images/hero-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: "url(/images/hero-bg.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
@@ -70,19 +84,18 @@ export default function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            Hi, I'm{' '}
-            <span className="text-primary">Arman</span>
+            Hi, I'm <span className="text-primary">Arman Shaikh</span>
             <br />
-            Software Developer
+            Full Stack Developer
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed"
           >
-            I build scalable web apps with modern UI, clean code and powerful
-            backend logic. Passionate about creating seamless digital
-            experiences.
+            I build scalable web applications using React, Node.js, Express, and
+            MongoDB, with a focus on modern UI, clean code, and reliable backend
+            development.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -107,13 +120,16 @@ export default function Hero() {
               className="btn-secondary flex items-center justify-center gap-2 group"
             >
               View Projects
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={18}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </motion.a>
           </motion.div>
 
           {/* Social Icons */}
           <motion.div variants={itemVariants} className="flex gap-4">
-            {socialLinks.map((link) => {
+            {socialLinks.map(link => {
               const Icon = link.icon;
               return (
                 <motion.a
@@ -142,12 +158,12 @@ export default function Hero() {
             {/* Animated geometric shapes */}
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 border-2 border-primary/20 rounded-lg"
             />
             <motion.div
               animate={{ rotate: -360 }}
-              transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
+              transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
               className="absolute inset-12 border-2 border-primary/30 rounded-full"
             />
             <motion.div
