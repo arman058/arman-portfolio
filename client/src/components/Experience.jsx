@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Briefcase, Award, Code, Zap } from 'lucide-react';
-import SectionTitle from './SectionTitle';
+import { motion } from "framer-motion";
+import { Briefcase, Award, Code, Zap } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 /**
  * Experience Section Component
@@ -11,43 +11,21 @@ export default function Experience() {
     {
       id: 1,
       icon: Briefcase,
-      title: 'MERN-Stack Developer Intern',
-      company: 'Being Ambitious',
-      period: 'Dec 2025 - Feb 2026',
+      title: "MERN-Stack Developer Intern",
+      company: "Being Ambitious",
+      period: "Dec 2025 - Feb 2026",
       description:
-        ' Worked on Shopify embedded apps using Remix, React, Node.js(Express) Prisma, GraphQL, and Shopify APIs. Developed custom Side Cart systems with BOGO and Freebie rule implementations. Wrote and optimized SQL queries for backend data operations and reporting. Designed database schemas using Prisma and integrated APIs with database-driven systems. Developed and debugged production-level features and REST APIs. ',
-      highlights: ['Remix','React', 'Node.js', 'Express', 'Prisma', 'Shopify APIs', "GraphQL"],
+        "Worked on Shopify embedded applications using Remix, React, Node.js, Express, Prisma, GraphQL, and Shopify APIs. Developed custom side cart systems with BOGO and freebie rule implementations. Wrote and optimized SQL queries for backend data operations and reporting. Designed database schemas using Prisma and integrated APIs with database-driven systems. Developed and debugged production-level features and REST APIs.",
+      highlights: [
+        "Remix",
+        "React",
+        "Node.js",
+        "Express",
+        "Prisma",
+        "Shopify APIs",
+        "GraphQL",
+      ],
     },
-    // {
-    //   id: 2,
-    //   icon: Code,
-    //   title: 'Full Stack Developer',
-    //   company: 'Digital Agency',
-    //   period: 'Jun 2022 - Dec 2022',
-    //   description:
-    //     'Developed and maintained multiple client projects. Implemented REST APIs and responsive UIs for diverse client requirements.',
-    //   highlights: ['MERN Stack', 'Tailwind CSS', 'MongoDB'],
-    // },
-    // {
-    //   id: 3,
-    //   icon: Award,
-    //   title: 'Hackathon Winner',
-    //   company: 'National Tech Hackathon',
-    //   period: 'Mar 2022',
-    //   description:
-    //     'Built a fintech solution in 24 hours that won first place. Demonstrated rapid prototyping and problem-solving skills.',
-    //   highlights: ['Rapid Development', 'Team Collaboration', 'Innovation'],
-    // },
-    // {
-    //   id: 4,
-    //   icon: Zap,
-    //   title: 'Freelance Developer',
-    //   company: 'Self-Employed',
-    //   period: 'Jan 2021 - May 2022',
-    //   description:
-    //     'Completed 15+ projects for clients worldwide. Specialized in custom web applications and responsive design.',
-    //   highlights: ['Client Management', 'Full Stack', 'Agile'],
-    // },
   ];
 
   const containerVariants = {
@@ -97,13 +75,13 @@ export default function Experience() {
                   key={exp.id}
                   variants={itemVariants}
                   className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${
-                    isEven ? 'md:grid-flow-dense' : ''
+                    isEven ? "md:grid-flow-dense" : ""
                   }`}
                 >
                   {/* Content Card */}
                   <motion.div
                     whileHover={{ y: -4 }}
-                    className={`card-minimal ${isEven ? 'md:col-start-1' : 'md:col-start-2'}`}
+                    className={`card-minimal ${isEven ? "md:col-start-1" : "md:col-start-2"}`}
                   >
                     <div className="flex items-start gap-4 mb-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
