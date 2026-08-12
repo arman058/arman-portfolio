@@ -137,6 +137,7 @@ export default function Projects() {
                   src={featuredProject.image}
                   alt={`${featuredProject.title} project by Arman Shaikh`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -225,6 +226,7 @@ export default function Projects() {
                   src={project.image}
                   alt={`${project.title} project by Arman Shaikh`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 

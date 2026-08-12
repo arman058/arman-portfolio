@@ -73,6 +73,7 @@ export default function About() {
                   className="w-full aspect-square"
                   src="about-profile-pic.jpeg"
                   alt="Arman Shaikh - Full Stack Developer"
+                  loading="lazy"
                 />
                 {/* <div className="text-center">
                   <div className="text-6xl font-bold text-primary/30 mb-2">
