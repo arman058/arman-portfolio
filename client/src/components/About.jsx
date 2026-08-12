@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Code, Zap, Lightbulb, Target } from 'lucide-react';
-import SectionTitle from './SectionTitle';
+import { motion } from "framer-motion";
+import { Code, Zap, Lightbulb, Target } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 /**
  * About Section Component
@@ -10,23 +10,23 @@ export default function About() {
   const highlights = [
     {
       icon: Zap,
-      title: 'Full Stack Developer',
-      description: 'Worked on production-level applications',
+      title: "Full Stack Developer",
+      description: "Worked on production-level applications",
     },
     {
       icon: Code,
-      title: 'MERN & Next.js Expert',
-      description: 'Full stack development with modern frameworks',
+      title: "MERN & Next.js Development",
+      description: "Full stack development with modern frameworks",
     },
     {
       icon: Lightbulb,
-      title: 'Clean & Modern UI',
-      description: 'Responsive designs with great user experience',
+      title: "Clean & Modern UI",
+      description: "Responsive designs with great user experience",
     },
     {
       icon: Target,
-      title: 'Scalable Systems',
-      description: 'Architecture focused on performance and growth',
+      title: "Scalable Systems",
+      description: "Architecture focused on performance and growth",
     },
   ];
 
@@ -69,7 +69,11 @@ export default function About() {
             <div className="relative">
               {/* Placeholder for profile image */}
               <div className="w-full aspect-square bg-secondary rounded-lg border-2 border-primary/20 flex items-center justify-center overflow-hidden">
-                                  <img className="w-full aspect-square" src="about-profile-pic.jpeg" alt="" />
+                <img
+                  className="w-full aspect-square"
+                  src="about-profile-pic.jpeg"
+                  alt="Arman Shaikh - Full Stack Developer"
+                />
                 {/* <div className="text-center">
                   <div className="text-6xl font-bold text-primary/30 mb-2">
                     AS
@@ -83,15 +87,23 @@ export default function About() {
           {/* Right - Bio Text */}
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm Arman Shaikh, an MCA student and Full Stack Developer passionate about building scalable, secure, and user-focused web applications. My expertise spans MERN Stack, ASP.NET Core, Java, Python, SQL, and modern frontend technologies such as React and Next.js.
+              I'm Arman Shaikh, a Full Stack Developer and MCA student focused
+              on building scalable, secure, and user-focused web applications.
+              My experience includes MERN Stack, ASP.NET Core, Java, Python,
+              SQL, React, and Next.js.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I have worked on projects ranging from ERP systems and AI-powered platforms to Shopify applications and startup-investor ecosystems. I enjoy solving complex problems, designing efficient backend architectures, and crafting intuitive user experiences.
+              I have worked on projects ranging from ERP systems and AI-powered
+              platforms to Shopify applications and startup-investor ecosystems.
+              I enjoy solving complex problems, designing efficient backend
+              architectures, and creating intuitive user experiences.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Beyond development, I continuously explore emerging technologies, software engineering best practices, and AI-driven solutions to create impactful digital products.
+              Beyond development, I continuously explore emerging technologies,
+              software engineering best practices, and AI-driven solutions to
+              create impactful digital products.
             </p>
 
             <motion.a
@@ -118,7 +130,7 @@ export default function About() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ y: -8, borderColor: '#0066FF' }}
+                whileHover={{ y: -8, borderColor: "#0066FF" }}
                 className="card-minimal"
               >
                 <div className="mb-4">
