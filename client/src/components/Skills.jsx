@@ -91,7 +91,7 @@ export default function Skills() {
       id="skills"
       className="py-20 md:py-32 bg-background"
       style={{
-        backgroundImage: 'url(/images/skills-bg.jpg)',
+        backgroundImage: 'url(/images/skills-bg.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

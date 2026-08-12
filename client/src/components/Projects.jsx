@@ -17,7 +17,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/arman058/VentureMatch",
       featured: true,
-      image: "/images/project/Finvest.png",
+      image: "/images/project/Finvest.webp",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
-      image: "images/project/Masala_Ecommerce.png",
+      image: "images/project/Masala_Ecommerce.webp",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/arman058/task_tracker",
       featured: false,
-      image: "images/project/Task_Management.png",
+      image: "images/project/Task_Management.webp",
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/arman058/College_ERP_System",
       featured: false,
-      image: "images/project/ERP.png",
+      image: "images/project/ERP.webp",
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/arman058/plants-landing_page",
       featured: false,
-      image: "images/project/Plants_Landing_Page.png",
+      image: "images/project/Plants_Landing_Page.webp",
     },
     {
       id: 6,
@@ -72,7 +72,7 @@ export default function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/arman058/stock_portfolio_app",
       featured: false,
-      image: "images/project/stock_portfolio.png",
+      image: "images/project/stock_portfolio.webp",
     },
   ];
 
@@ -103,7 +103,7 @@ export default function Projects() {
       id="projects"
       className="py-20 md:py-32 bg-card"
       style={{
-        backgroundImage: "url(/images/projects-bg.jpg)",
+        backgroundImage: "url(/images/projects-bg.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",

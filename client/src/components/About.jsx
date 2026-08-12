@@ -71,7 +71,7 @@ export default function About() {
               <div className="w-full aspect-square bg-secondary rounded-lg border-2 border-primary/20 flex items-center justify-center overflow-hidden">
                 <img
                   className="w-full aspect-square"
-                  src="about-profile-pic.jpeg"
+                  src="about-profile-pic.webp"
                   alt="Arman Shaikh - Full Stack Developer"
                   loading="lazy"
                 />
