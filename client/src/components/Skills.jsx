@@ -21,12 +21,22 @@ export default function Skills() {
     },
     {
       category: 'Backend',
-      skills: ['Node.js', 'Express.js', 'ASP.NET Core', 'REST APIs', 'GraphQL', 'Authentication', 'JSP', 'Spring Boot', 'Flask', 'Fast API'],
+      skills: ['Node.js', 'Express.js', 'ASP.NET Core', 'REST APIs', 'GraphQL', 'Authentication', 'JSP', 'Spring Boot', 'Flask', 'FastAPI'],
     },
     {
-      category: 'Databases',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'Supabase', 'Prisma ORM', 'JDBC','SQL Server Management'],
-    },
+  category: 'Databases',
+  skills: [
+    'MongoDB',
+    'PostgreSQL',
+    'MySQL',
+    'Firebase',
+    'Supabase',
+    'Prisma ORM',
+    'JDBC',
+    'Microsoft SQL Server',
+    'SQL Server Management Studio (SSMS)'
+  ],
+},
 //     {
 //   category: 'AI & Machine Learning',
 //   skills: [
