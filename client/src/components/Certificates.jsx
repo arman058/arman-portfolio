@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
-import SectionTitle from './SectionTitle';
+import { motion } from "framer-motion";
+import { Award } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 /**
  * Certificates Section Component
@@ -10,77 +10,79 @@ export default function Certificates() {
   const certificates = [
     {
       id: 1,
-      title: 'Data Structures and Algorithms Design',
-      issuer: 'NPTEL',
-      date: 'Jul-Oct 2025',
-      credentialUrl: 'https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs81/Course/NPTEL25CS81S36370083810844162.pdf',
+      title: "Data Structures and Algorithms Design",
+      issuer: "NPTEL",
+      date: "Jul-Oct 2025",
+      credentialUrl:
+        "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs81/Course/NPTEL25CS81S36370083810844162.pdf",
     },
     {
       id: 2,
-      title: 'Software Testing',
-      issuer: 'NPTEL',
-      date: 'Jul-Oct 2025',
-      credentialUrl: 'https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs113/Course/NPTEL25CS113S56370179310844162.pdf',
+      title: "Software Testing",
+      issuer: "NPTEL",
+      date: "Jul-Oct 2025",
+      credentialUrl:
+        "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs113/Course/NPTEL25CS113S56370179310844162.pdf",
     },
     {
       id: 3,
-      title: 'Introduction to Software Engineering',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/F4J23NUTFO38',
+      title: "Introduction to Software Engineering",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/F4J23NUTFO38",
     },
     {
       id: 4,
-      title: 'Software Developer Career Guide and Interview Preparation',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/P0CHUFSG5M0T',
+      title: "Software Developer Career Guide and Interview Preparation",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/P0CHUFSG5M0T",
     },
     {
       id: 5,
-      title: 'Spring Data Repositories',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/0501GHNKN04N ',
+      title: "Spring Data Repositories",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/0501GHNKN04N ",
     },
     {
       id: 6,
-      title: 'Developing Front-End Apps with React',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/REG2IINHSG8K',
+      title: "Developing Front-End Apps with React",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/REG2IINHSG8K",
     },
     {
       id: 7,
-      title: 'Full Stack Software Developer Assessment',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/PI5VYL49XOEX',
+      title: "Full Stack Software Developer Assessment",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/PI5VYL49XOEX",
     },
     {
       id: 8,
-      title: 'Introduction to HTML, CSS, & JavaScript',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/C1R1M2NDD6YE',
+      title: "Introduction to HTML, CSS, & JavaScript",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/C1R1M2NDD6YE",
     },
     {
       id: 9,
-      title: 'Spring MVC, Spring Boot and Rest Controllers',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/5VZKMKS5KQHR',
+      title: "Spring MVC, Spring Boot and Rest Controllers",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/5VZKMKS5KQHR",
     },
     {
       id: 10,
-      title: 'Spring - Ecosystem and Core',
-      issuer: 'Coursera',
-      date: 'Jan 2025',
-      credentialUrl: 'https://coursera.org/verify/ELVJRPFXJW7A',
+      title: "Spring - Ecosystem and Core",
+      issuer: "Coursera",
+      date: "Jan 2025",
+      credentialUrl: "https://coursera.org/verify/ELVJRPFXJW7A",
     },
     {
       id: 11,
-      title: "Backend Development using ASP.Net",
+      title: "Backend Development Using ASP.NET",
       issuer: "Coursera",
       date: "Apr 15, 2025",
       credentialUrl: "https://coursera.org/verify/1KW6VZSWUD3V",
@@ -156,11 +158,11 @@ export default function Certificates() {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {certificates.map((cert) => (
+          {certificates.map(cert => (
             <motion.div
               key={cert.id}
               variants={itemVariants}
-              whileHover={{ y: -8, borderColor: '#0066FF' }}
+              whileHover={{ y: -8, borderColor: "#0066FF" }}
               className="card-minimal flex flex-col items-center text-center"
             >
               {/* Certificate Icon */}
@@ -200,9 +202,10 @@ export default function Certificates() {
           className="mt-16 p-8 bg-background rounded-lg border border-border text-center"
         >
           <p className="text-muted-foreground text-lg">
-            I believe in continuous learning and regularly update my skills with
-            the latest technologies. Always exploring new courses and certifications
-            to stay ahead in the industry.
+            I continuously strengthen my software development skills through
+            certifications and hands-on projects across full-stack development,
+            software engineering, databases, DevOps, and modern web
+            technologies.
           </p>
         </motion.div>
       </div>
